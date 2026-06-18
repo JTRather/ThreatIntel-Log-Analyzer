@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTAC Intern - Threat Dashboard</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="dashboard-header">
+        <div class="logo-container">
+            <!-- Using a simple Falcon icon via SVG -->
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FF4D4D" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+            </svg>
+            <h1>// THREAT_INTEL_DASH</h1>
+        </div>
+        <div class="status-badge">
+            <span class="dot"></span> Monitoring: Cyber Adversaries
+        </div>
+    </header>
+
+    <!-- Main Dashboard Grid -->
+    <main class="dashboard-grid">
+        <!-- Card 1: Summary -->
+        <section class="card summary-card">
+            <h2>Global Threat Landscape</h2>
+            <div class="summary-stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalArticles">0</span>
+                    <span class="stat-label">Recent Incidents</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="uniqueSources">0</span>
+                    <span class="stat-label">Sources</span>
+                </div>
+            </div>
+            <p class="last-updated">Last updated: <span id="timestamp">Just now</span></p>
+        </section>
+
+        <!-- Card 2: The Feed (Tactical Intel) -->
+        <section class="card feed-card">
+            <h2>// TACTICAL_FEED (TTPs & IOCs)</h2>
+            <div id="newsFeed">
+                <!-- JavaScript will fill this -->
+                <div class="loading">Loading threat data...</div>
+            </div>
+        </section>
+
+        <!-- Card 3: Strategic Analysis (Placeholder for your skills) -->
+        <section class="card analysis-card">
+            <h2>// STRATEGIC_ANALYSIS</h2>
+            <div class="analysis-content">
+                <p><strong>Trending Geopolitical Context:</strong> Tracking state-sponsored clusters targeting critical infrastructure.</p>
+                <div class="skill-tags">
+                    <span class="tag">Malware Repo Analysis</span>
+                    <span class="tag">Network Infrastructure</span>
+                    <span class="tag">Sandboxing</span>
+                    <span class="tag">Diamond Model</span>
+                </div>
+                <p class="analyst-note">*This dashboard represents my ability to collect, collate, and communicate threat information rapidly.*</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
